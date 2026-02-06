@@ -1,0 +1,103 @@
+# ===================================================================
+# Spring Boot configuration for the "sks" profile.
+#
+# This configuration overrides the application.yml file.
+#
+# More information on profiles: http://www.jhipster.tech/profiles/
+# More information on configuration properties: http://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+
+# ===================================================================
+# Eureka Configurations
+# ===================================================================
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://eureka:8080/eureka/
+    instance:
+        prefer-ip-address: true
+# ===================================================================
+
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring:
+    application:
+        name: abdm
+    http:
+        multipart:
+        max-file-size: -1
+        max-request-size: -1
+# ===================================================================
+
+
+# ===================================================================
+# Server Configurations
+# ===================================================================
+server:
+    port: 8088
+# ===================================================================
+
+
+# ===================================================================
+# Security Configurations
+# ===================================================================
+security:
+    basic:
+        enabled : false
+# ===================================================================
+
+
+# ===================================================================
+# Token Configurations
+# ===================================================================
+jwt:
+    header : TOKEN
+# ===================================================================
+
+
+# ===================================================================
+# Ribbon Configurations
+# ===================================================================
+ribbon:
+    eureka:
+        enabled: true
+# ===================================================================
+
+abdm:
+    x-cm-id: sbx
+    user-id: abdmuser
+    client-id: SBX_003667
+    client-secret: fed62203-9489-4829-b519-8f70b4cf64ee
+    access-token-url: https://dev.abdm.gov.in/api/hiecm/gateway/v3/sessions
+    public-key-url: https://abhasbx.abdm.gov.in/abha/api/v3/profile/public/certificate
+    get-profile-url: https://abhasbx.abdm.gov.in/abha/api/v3/profile/account
+    search-abha-address-url: https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/search
+    get-phr-profile-url: https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/profile/abha-profile
+    token-expiry-in-seconds: 1800
+    grant-type: client_credentials
+    milestone1:
+        creation:
+            request-aadhaar-enrollment-otp-url: https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+            aadhaar-enrollment-url: https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+            abha-address-suggesstion-url: https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+            create-abha-address-url: https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/abha-address
+            update-communication-mobile-url: https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/auth/byAbdm
+#            request-abha-card-download-otp-url: https://healthidsbx.abdm.gov.in/api/v2/auth/init
+#            confirm-aadhaar-otp-url: https://healthidsbx.abdm.gov.in/api/v2/auth/confirmWithAadhaarOtp
+#            confirm-mobile-otp-url: https://healthidsbx.abdm.gov.in/api/v2/auth/confirmWithMobileOTP
+#            download-abha-card-url: https://healthidsbx.abdm.gov.in/api/v2/account/getCard
+            download-abha-card-url: https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/abha-card
+        verfication:
+            request-otp-url: https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/request/otp
+            confirm-otp-url: https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/verify
+            phr-request-otp-url: https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/request/otp
+            phr-confirm-otp-url: https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/verify
+            confirm-patient-by-mobile-url: https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/verify/user
+            v1-facility-qr-profile-share-ack-url: https://dev.abdm.gov.in/gateway/v1.0/patients/profile/on-share
+            v3-facility-qr-profile-share-ack-url: https://dev.abdm.gov.in/api/hiecm/patient-share/v3/on-share
+            card-scan-generate-token-url: https://dev.abdm.gov.in/hiecm/api/v3/token/generate-token
