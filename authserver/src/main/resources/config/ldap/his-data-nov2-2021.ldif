@@ -1,0 +1,4213 @@
+version: 1
+
+dn: cn=Language,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Language
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306064951.031Z
+menuOrder: 16
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306064951.031Z
+displayName: Language
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/language
+
+dn: cn=Op Dashboard,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Op Dashboard
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023110940.064Z
+menuOrder: 0
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211029053819.460Z
+displayName: Dashboard
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/op-dashboard
+
+dn: cn=Bed,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Bed
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082533.142Z
+menuOrder: 6
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304082533.143Z
+displayName: Bed
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/bed
+
+dn: cn=OT CHARGES,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: OT CHARGES
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123407.234Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123407.234Z
+code: 18
+description: OT CHARGES
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Add Address Line,cn=Registration,cn=Menus,cn=His,cn=applications,dc=r
+ aster,dc=com
+objectclass: top
+objectclass: ihmsResource
+objectclass: baseEntity
+active: true
+cn: Add Address Line
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023133156.757Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023133156.757Z
+url: his/addAddressline
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+
+dn: cn=Speciality,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Speciality
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306051920.415Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306051920.417Z
+displayName: Speciality
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/speciality
+
+dn: cn=Package,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Package
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306061237.556Z
+menuOrder: 13
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306061237.556Z
+displayName: Package
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/packages
+
+dn: cn=Advance,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Advance
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132415.087Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132415.088Z
+displayName: Advance
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/advance
+
+dn: cn=Denomination,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Denomination
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065455.491Z
+menuOrder: 22
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065455.491Z
+displayName: Denomination
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/denomination
+
+dn: cn=MICROBIOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: MICROBIOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123504.605Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123504.605Z
+code: 128
+description: MICROBIOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=ICU,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ICU
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123427.092Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123427.092Z
+code: ICU
+description: ICU
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=ULTRASOUND,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ULTRASOUND
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123418.429Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123418.429Z
+code: 74
+description: ULTRASOUND
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=raster,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsUser
+objectClass: inetOrgPerson
+objectClass: baseEntity
+objectClass: person
+objectClass: organizationalPerson
+active: TRUE
+cn: raster
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20201111113151.444Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20201111113200.342Z
+sn: raster
+uid: raster
+userPassword: {SSHA}a9yCuGbL99GWETRLYeLBOMF9MNUY2fUswmKWog==
+
+dn: cn=Medical History,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Medical History
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302075621.868Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210302075621.868Z
+displayName: Medical History
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Developers,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/medical-history
+
+dn: cn=Menu Permission,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Menu Permission
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302075550.318Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210302075550.323Z
+displayName: Menu Permission
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Developers,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/create-menu-resource
+
+dn: cn=GASTROENTEROLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: GASTROENTEROLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211018123007.362Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211018123007.362Z
+code: GEY
+description: GASTROENTEROLOGY
+externalDepartmentId: 153
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=PWD,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PWD
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123431.185Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123431.185Z
+code: PWD
+description: PWD
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: ou=branches,o=skshospital,dc=raster,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: branches
+
+dn: cn=PHYSIOTHERAPHY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PHYSIOTHERAPHY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123402.063Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123402.063Z
+code: 07
+description: PHYSIOTHERAPHY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Drug Route,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Drug Route
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065736.138Z
+menuOrder: 25
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065736.139Z
+displayName: Drug Route
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/drug-administration-route
+
+dn: cn=Salutation,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Salutation
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065148.331Z
+menuOrder: 19
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065148.331Z
+displayName: Salutation
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/salutation
+
+dn: cn=NEPHROLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: NEPHROLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123455.196Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123455.196Z
+code: 116
+description: NEPHROLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Token Management,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Token Management
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303105944.668Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303105944.669Z
+displayName: Token Management
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/token-management
+
+dn: uid=venkatesh,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: venkatesh
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210430073332.205Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210430073332.206Z
+sn: venkatesh
+creditAmountLimit: 0
+departmentNumber: cn=Opd,ou=departments,o=skshospital
+doctorId: 2
+isCreditAuthorizedUser: false
+isDoctor: true
+uid: venkatesh
+userPassword: {SHA}Ud+X2/9bppQ1g7Vz5YweMwSEFwU=
+
+dn: cn=GENERAL MEDICINE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: GENERAL MEDICINE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123441.814Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123441.814Z
+code: GEN
+description: GENERAL MEDICINE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=AMBULANCE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: AMBULANCE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123417.462Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123417.462Z
+code: 51
+description: AMBULANCE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=INSTRU. BRAKAGE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: INSTRU. BRAKAGE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123421.282Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123421.282Z
+code: 96
+description: INSTRU. BRAKAGE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsRole
+objectClass: baseEntity
+active: TRUE
+cn: Developer Admin
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20200819163441.554Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20200819163453.958Z
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+objectClass: top
+objectClass: groupOfNames
+objectClass: baseEntity
+active: TRUE
+cn: Salem
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20200819161707.516Z
+member: uid=raster,dc=raster,dc=com
+member: uid=Vishnu,cn=users,dc=raster,dc=com
+member: uid=Suresh,cn=users,dc=raster,dc=com
+member: uid=Sundari,cn=users,dc=raster,dc=com
+member: uid=venkatesh,cn=users,dc=raster,dc=com
+member: uid=Ramki,cn=users,dc=raster,dc=com
+member: uid=kavitha,cn=users,dc=raster,dc=com
+member: uid=muthu,cn=users,dc=raster,dc=com
+member: uid=sks,cn=users,dc=raster,dc=com
+member: uid=mukesh,cn=users,dc=raster,dc=com
+member: uid=ct,cn=users,dc=raster,dc=com
+member: uid=nissi,cn=users,dc=raster,dc=com
+member: uid=Mala,cn=users,dc=raster,dc=com
+member: uid=Hema,cn=users,dc=raster,dc=com
+member: uid=Meena,cn=users,dc=raster,dc=com
+member: uid=raja,cn=users,dc=raster,dc=com
+member: uid=Manju,cn=users,dc=raster,dc=com
+member: uid=Teenu,cn=users,dc=raster,dc=com
+member: uid=madhan,cn=users,dc=raster,dc=com
+member: uid=ramya,cn=users,dc=raster,dc=com
+member: uid=Kanagasabesan,cn=users,dc=raster,dc=com
+member: uid=ram,cn=users,dc=raster,dc=com
+member: uid=Gowtham,cn=users,dc=raster,dc=com
+member: uid=krishna,cn=users,dc=raster,dc=com
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20200819161710.155Z
+billingLimit: 200000
+timeZone: Asia/Kolkata
+
+dn: cn=Ot Schedule,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ot Schedule
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012060943.085Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012060943.096Z
+displayName: OT Schedule
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Operation Theatre,cn=Menus,cn=His,cn=applications,dc=raster,d
+ c=com
+url: operation-theatre/ot-schedule
+
+dn: cn=DIALYSIS,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: DIALYSIS
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123420.356Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123420.356Z
+code: 94
+description: DIALYSIS
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Frequency,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Frequency
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065655.157Z
+menuOrder: 24
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065655.157Z
+displayName: Frequency
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/frequency
+
+dn: cn=Developers,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: baseEntity
+objectClass: ihmsMenu
+active: true
+cn: Developers
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302060207.262Z
+menuOrder: 20
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094351.465Z
+displayName: Developers
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-settings
+
+dn: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Op
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303105823.222Z
+menuOrder: 6
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020095254.507Z
+displayName: OP
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-front-office
+
+dn: cn=Sync Mail Box,cn=Claim Inbox,cn=Menus,cn=His,cn=applications,dc=raste
+ r,dc=com
+objectclass: top
+objectclass: ihmsResource
+objectclass: baseEntity
+active: true
+cn: Sync Mail Box
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023133123.166Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023133123.166Z
+url: his/syncMailInbox
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+
+dn: cn=DENTAL,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: DENTAL
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123502.180Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123502.180Z
+code: 124
+description: DENTAL
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=muthu,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: muthu
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211014101610.278Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211014101610.279Z
+sn: muthu
+creditAmountLimit: 100000
+departmentNumber: null
+doctorId: 5982
+isCreditAuthorizedUser: true
+isDoctor: true
+uid: muthu
+userPassword: {SHA}btr9rPzGUqf4HBmWOKD9yt2iqBU=
+
+dn: cn=GENERAL SURGEN,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: GENERAL SURGEN
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123448.956Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123448.956Z
+code: 110
+description: GENERAL SURGEN
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=ENDOSCOPY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ENDOSCOPY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123403.097Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123403.097Z
+code: 08
+description: ENDOSCOPY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=ENT,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ENT
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123454.119Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123454.119Z
+code: 115
+description: ENT
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Registration,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Registration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302091706.137Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210302091706.138Z
+displayName: Registration
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Patient Registration,cn=Menus,cn=His,cn=applications,dc=raste
+ r,dc=com
+url: front-office/registration
+
+dn: cn=PEDIATRIC ICU,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PEDIATRIC ICU
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123506.542Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123506.542Z
+code: PICU
+description: PEDIATRIC ICU
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Room Type,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Room Type
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082459.204Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304082459.204Z
+displayName: Room Type
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/room-type
+
+dn: cn=Ip Explorer,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ip Explorer
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110751.080Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110751.080Z
+displayName: Ip Explorer
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Ip,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ip-management/ip-explorer
+
+dn: cn=OP Billing,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: OP Billing
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110536.402Z
+menuOrder: 5
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110541.348Z
+displayName: OP Billing
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/billing
+
+dn: uid=Teenu,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Teenu
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211029070028.857Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211029070028.858Z
+sn: Priya
+departmentNumber: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: Teenu
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=SPEECH THERAPY & AUDIOLOGY,ou=departments,o=skshospital,dc=raster,dc=
+ com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: SPEECH THERAPY & AUDIOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123503.737Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123503.737Z
+code: 127
+description: SPEECH THERAPY & AUDIOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=krishna,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: krishna
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211101070252.768Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211101070252.793Z
+sn: krishna
+creditAmountLimit: 0
+departmentNumber: OPD
+doctorId: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: krishna
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Reports,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Reports
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012064934.137Z
+menuOrder: 15
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094559.066Z
+displayName: Reports
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-report
+
+dn: cn=CREDIT,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CREDIT
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123416.489Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123416.489Z
+code: 48
+description: CREDIT
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Additional Discount,cn=OP Billing,cn=Menus,cn=His,cn=applications,dc=
+ raster,dc=com
+objectclass: top
+objectclass: ihmsResource
+objectclass: baseEntity
+active: true
+cn: Additional Discount
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012071256.678Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012071256.678Z
+url: his/enterAdditionalDiscount
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+
+dn: cn=PATHOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PATHOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123451.096Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123451.096Z
+code: 112
+description: PATHOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Doctor,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Doctor
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306060951.139Z
+menuOrder: 11
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211018053631.272Z
+displayName: Doctor
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/doctors
+
+dn: cn=Ward Dashboard,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ward Dashboard
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303114937.557Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303114937.558Z
+displayName: Dashboard
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ward,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ward-management/dashboard
+
+dn: cn=Death Registration,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Death Registration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012070329.354Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211025121138.094Z
+displayName: Death Records
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Mrd,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: medical-records-department/death-records
+
+dn: cn=ENDOCRINOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ENDOCRINOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123452.102Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123452.102Z
+code: 113
+description: ENDOCRINOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Ip Billing,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ip Billing
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110918.906Z
+menuOrder: 5
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110918.907Z
+displayName: Ip Billing
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Ip,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/ip-billing
+
+dn: cn=Visit Purpose,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Visit Purpose
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306060439.224Z
+menuOrder: 7
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306060439.224Z
+displayName: Visit Purpose
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/visit-purpose
+
+dn: cn=Room,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Room
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082517.746Z
+menuOrder: 5
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304082517.747Z
+displayName: Room
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/room
+
+dn: cn=ONCOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ONCOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123458.206Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123458.206Z
+code: 120
+description: ONCOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=users,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsUserRoot
+cn: users
+
+dn: cn=Casualty,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Casualty
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012054646.072Z
+menuOrder: 8
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094838.700Z
+displayName: Casualty
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Casualty,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-casualty
+
+dn: dc=raster,dc=org
+objectclass: top
+objectclass: domain
+dc: raster
+
+dn: uid=ct,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: ct
+createdBy: uid=mukesh,cn=users,dc=raster,dc=com
+createdDate: 20211025131540.105Z
+modifiedBy: uid=mukesh,cn=users,dc=raster,dc=com
+modifiedDate: 20211025131540.105Z
+sn: ct
+creditAmountLimit: 0
+departmentNumber: CT
+doctorId: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: ct
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Cash Counter
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115636.068Z
+menuOrder: 14
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094628.678Z
+displayName: Cash Counter
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-bill
+
+dn: cn=NEUROSURGEON,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: NEUROSURGEON
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123444.551Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123444.551Z
+code: NS
+description: NEUROSURGEON
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Ward Group,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ward Group
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082335.634Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304082335.646Z
+displayName: Ward Group
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/ward-group
+
+dn: uid=Vishnu,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Vishnu
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210316054412.674Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210316054412.675Z
+sn: Vishnu
+departmentNumber: cn=Opd,ou=departments,o=skshospital
+doctorId: 1
+isCreditAuthorizedUser: false
+isDoctor: true
+mail: vishnu@gmail.com
+mobile: 9856565522
+uid: Vishnu
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=IP,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: IP
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123424.308Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123424.308Z
+code: 99
+description: IP
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Referral Type,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Referral Type
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302075652.871Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210302075652.876Z
+displayName: Referral Type
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Developers,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/referral-type
+
+dn: cn=Block unblock Appointments,cn=Menus,cn=His,cn=applications,dc=raster,
+ dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Block/unblock Appointments
+cn: block unblock appointments
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110052.661Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110052.662Z
+displayName: Block/Unblock Appt.
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/appointment-block-unblock
+
+dn: cn=Tax,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Tax
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306060717.891Z
+menuOrder: 9
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306060717.891Z
+displayName: Tax
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/taxes
+
+dn: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Cashier
+createdBy: uid=mukesh,cn=users,dc=raster,dc=com
+createdDate: 20211013122135.544Z
+modifiedBy: uid=mukesh,cn=users,dc=raster,dc=com
+modifiedDate: 20211013122135.545Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=madhan,cn=users,dc=raster,dc=com
+
+dn: cn=User,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: User
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304083107.021Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304083107.040Z
+displayName: User
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=User Management,cn=Menus,cn=His,cn=applications,dc=raster,dc=
+ com
+url: user-management/user-creation
+
+dn: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=raste
+ r,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Business Development Manager
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210315124342.739Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210315124342.740Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=nissi,cn=users,dc=raster,dc=com
+member: uid=Gowtham,cn=users,dc=raster,dc=com
+member: uid=krishna,cn=users,dc=raster,dc=com
+
+dn: cn=Ip,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ip
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110641.763Z
+menuOrder: 7
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020095304.868Z
+displayName: IP
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-additional-bed
+
+dn: cn=LACTATION CONSULTANT,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: LACTATION CONSULTANT
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123507.521Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123507.521Z
+code: LC
+description: LACTATION CONSULTANT
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Work List,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Work List
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012060537.476Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211030050116.755Z
+displayName: Work List
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Ct,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Radiology,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/worklist
+
+dn: cn=Op Registration,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: OP Registration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303105903.218Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303105903.219Z
+displayName: Op Registration
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/appointment
+
+dn: cn=OPD,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: OPD
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123439.879Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123439.879Z
+code: OPD
+description: OPD
+externalDepartmentId: null
+isInvestigationDepartment: true
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Unit,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Unit
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306060627.304Z
+menuOrder: 8
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306060627.304Z
+displayName: Unit
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/units
+
+dn: cn=LABOUR,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: LABOUR
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123432.041Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123432.041Z
+code: LABOUR
+description: LABOUR
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=TELEPHONE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: TELEPHONE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123358.367Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123358.367Z
+code: 01
+description: TELEPHONE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Block,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Block
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082238.542Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304082238.559Z
+displayName: Block
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/blocks
+
+dn: cn=Claim Explorer,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Claim Explorer
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115305.294Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303115305.295Z
+displayName: Explorer
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Claim Management,cn=Menus,cn=His,cn=applications,dc=raster,dc
+ =com
+url: claim-management/claim-explorer
+
+dn: cn=Reservation List,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Reservation List
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110843.824Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110843.824Z
+displayName: Reservation List
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Ip,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ip-management/reservation-list
+
+dn: cn=DERMATOLOGIST & COSMETOLOGIST,ou=departments,o=skshospital,dc=raster,
+ dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: DERMATOLOGIST & COSMETOLOGIST
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123405.198Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123405.198Z
+code: 123
+description: DERMATOLOGIST & COSMETOLOGIST
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Application Config,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Application Config
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065922.871Z
+menuOrder: 28
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023084432.348Z
+displayName: Application Config
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/app-setting
+
+dn: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Preferences
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082124.971Z
+menuOrder: 18
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094445.930Z
+displayName: Preferences
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+menuIcon: icon-settings
+
+dn: cn=Cash Transfer,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Cash Transfer
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132535.768Z
+menuOrder: 6
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132535.769Z
+displayName: Cash Transfer
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/cash-transfer
+
+dn: cn=DIETARY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: DIETARY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123429.188Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123429.188Z
+code: DIET
+description: DIETARY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=CONSULTANT,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CONSULTANT
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123430.142Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123430.142Z
+code: CON
+description: CONSULTANT
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=NEUROLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: NEUROLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123433.751Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123433.751Z
+code: NEURO
+description: NEUROLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Visit History,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Visit History
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110130.345Z
+menuOrder: 6
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110341.423Z
+displayName: Visit History
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/visit-history
+
+dn: cn=Ct,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Ct
+createdBy: uid=mukesh,cn=users,dc=raster,dc=com
+createdDate: 20211025130918.495Z
+modifiedBy: uid=mukesh,cn=users,dc=raster,dc=com
+modifiedDate: 20211025130918.495Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=ct,cn=users,dc=raster,dc=com
+member: uid=Meena,cn=users,dc=raster,dc=com
+
+dn: cn=Mrd,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Mrd
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012065935.461Z
+menuOrder: 16
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211022110215.385Z
+displayName: MRD
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+menuIcon: icon-medical-records
+
+dn: cn=CARDIOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CARDIOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123432.773Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123432.773Z
+code: CARDIO
+description: CARDIOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Additional Discount,cn=Op Billing Cash Counter,cn=Menus,cn=His,cn=app
+ lications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsResource
+objectclass: baseEntity
+active: true
+cn: Additional Discount
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023132953.904Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023132953.904Z
+url: his/enterAdditionalDiscount
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+
+dn: cn=PULMO,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PULMO
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123413.490Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123413.490Z
+code: 35
+description: PULMO
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=PRE-EMPLOYEE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PRE-EMPLOYEE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123422.139Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123422.139Z
+code: 97
+description: PRE-EMPLOYEE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=CLINICAL PHARMACOLOGIST,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CLINICAL PHARMACOLOGIST
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211018123006.547Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211018123006.547Z
+code: CP
+description: CLINICAL PHARMACOLOGIST
+externalDepartmentId: 152
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Other Payment,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Other Payment
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132459.231Z
+menuOrder: 5
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132459.232Z
+displayName: Other Payment
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/other-payment
+
+dn: cn=Ot Explorer,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ot Explorer
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012061012.576Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012061012.577Z
+displayName: OT Explorer
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Operation Theatre,cn=Menus,cn=His,cn=applications,dc=raster,d
+ c=com
+url: operation-theatre/ot-explorer
+
+dn: dc=raster,dc=com
+objectclass: top
+objectclass: domain
+dc: raster
+
+dn: cn=Relationship,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Relationship
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065109.570Z
+menuOrder: 18
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065109.570Z
+displayName: Relationship
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/relationship
+
+dn: cn=Diagnosis Entry,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Diagnosis Entry
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211025121233.339Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211025121233.351Z
+displayName: Diagnosis Entry
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Mrd,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: medical-records-department/diagnosis-entry
+
+dn: cn=ROOM CHARGES,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ROOM CHARGES
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123434.818Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123434.818Z
+code: RMC
+description: ROOM CHARGES
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=GASTRO,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: GASTRO
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123445.442Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123445.442Z
+code: 106
+description: GASTRO
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=BLOOD TRANSFUSION MEDICINE,ou=departments,o=skshospital,dc=raster,dc=
+ com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: BLOOD TRANSFUSION MEDICINE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123500.132Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123500.132Z
+code: 122
+description: BLOOD TRANSFUSION MEDICINE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=ramya,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: ramya
+createdBy: uid=mukesh,cn=users,dc=raster,dc=com
+createdDate: 20211013121756.023Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211013121756.023Z
+sn: Bharathi
+creditAmountLimit: 10000
+departmentNumber: null
+isCreditAuthorizedUser: true
+isDoctor: false
+uid: ramya
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Appointment History,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Appointment History
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110012.396Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110012.397Z
+displayName: Appointment History
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: front-office/appointment-history
+
+dn: cn=Role,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Role
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304083051.636Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304083051.645Z
+displayName: Role
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=User Management,cn=Menus,cn=His,cn=applications,dc=raster,dc=
+ com
+url: user-management/user-role
+
+dn: cn=ORTHODONTICS,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ORTHODONTICS
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211018123008.318Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211018123008.318Z
+description: ORTHODONTICS
+externalDepartmentId: 154
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Marital Status,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Marital Status
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065028.464Z
+menuOrder: 17
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065028.464Z
+displayName: Marital Status
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/marital-status
+
+dn: cn=Doctor Op Queue,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Doctor Op Queue
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115544.735Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303115544.736Z
+displayName: Op Queue
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Doctor,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Doctor Emr,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: doctor/in-queue
+
+dn: cn=PACKAGES,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PACKAGES
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123414.394Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123414.394Z
+code: 42
+description: PACKAGES
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=Sundari,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Sundari
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210430073231.687Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210430073231.687Z
+sn: Sundari
+creditAmountLimit: 0
+departmentNumber: cn=Ipd,ou=departments,o=skshospital
+doctorId: 5
+isCreditAuthorizedUser: false
+isDoctor: true
+uid: Sundari
+userPassword: {SHA}gHdDfjzW6pl/k2R2rSWtBS6ywcs=
+
+dn: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,dc=c
+ om
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Front Office Executive
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210315124205.470Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210315124205.472Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=kavitha,cn=users,dc=raster,dc=com
+member: uid=sks,cn=users,dc=raster,dc=com
+
+dn: cn=CORPORATE BILL,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CORPORATE BILL
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123409.546Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123409.546Z
+code: 22
+description: CORPORATE BILL
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Casualty In Patients,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Casualty In Patients
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012055817.079Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012055849.149Z
+displayName: In Patients
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Casualty,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Casualty,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: casualty/in-patients
+
+dn: cn=Price Book,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Price Book
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306060750.501Z
+menuOrder: 10
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306060750.502Z
+displayName: Price Book
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/price-book
+
+dn: uid=Ramki,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Ramki
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210624070149.170Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210624070149.170Z
+sn: Ramki
+creditAmountLimit: 0
+departmentNumber: null
+doctorId: 7
+isCreditAuthorizedUser: false
+isDoctor: true
+uid: Ramki
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Accounts
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012070158.982Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012070158.982Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=Mala,cn=users,dc=raster,dc=com
+member: uid=Teenu,cn=users,dc=raster,dc=com
+member: uid=ramya,cn=users,dc=raster,dc=com
+
+dn: cn=Doctor Dashboard,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Doctor Dashboard
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115521.377Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303115521.378Z
+displayName: Dashboard
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Doctor,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Doctor Emr,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: doctor/doctor-dashboard
+
+dn: cn=Blood Group,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Blood Group
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306061546.618Z
+menuOrder: 15
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306061546.618Z
+displayName: Blood Group
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/blood-group
+
+dn: uid=mukesh,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: mukesh
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012070045.623Z
+modifiedBy: uid=mukesh,cn=users,dc=raster,dc=com
+modifiedDate: 20211012070045.623Z
+sn: mukesh
+creditAmountLimit: 50000
+departmentNumber: CT
+isCreditAuthorizedUser: true
+isDoctor: false
+mobile: 7010687140
+uid: mukesh
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Ward,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ward
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303114908.926Z
+menuOrder: 9
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094821.034Z
+displayName: Ward
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Casualty,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-ward
+
+dn: o=skshospital,dc=raster,dc=com
+objectClass: top
+objectClass: baseEntity
+objectClass: organization
+active: TRUE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20200819161237.283Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20200819161240.258Z
+o: skshospital
+city: Salem
+facsimileTelephoneNumber: 042765322
+landmark: Near New Bustand
+mail: info@skshospital.org
+member: uid=raster,dc=raster,dc=com
+member: uid=Vishnu,cn=users,dc=raster,dc=com
+member: uid=Suresh,cn=users,dc=raster,dc=com
+member: uid=Sundari,cn=users,dc=raster,dc=com
+member: uid=venkatesh,cn=users,dc=raster,dc=com
+member: uid=Ramki,cn=users,dc=raster,dc=com
+member: uid=kavitha,cn=users,dc=raster,dc=com
+member: uid=muthu,cn=users,dc=raster,dc=com
+member: uid=sks,cn=users,dc=raster,dc=com
+member: uid=mukesh,cn=users,dc=raster,dc=com
+member: uid=ct,cn=users,dc=raster,dc=com
+member: uid=nissi,cn=users,dc=raster,dc=com
+member: uid=Mala,cn=users,dc=raster,dc=com
+member: uid=Hema,cn=users,dc=raster,dc=com
+member: uid=Meena,cn=users,dc=raster,dc=com
+member: uid=raja,cn=users,dc=raster,dc=com
+member: uid=Manju,cn=users,dc=raster,dc=com
+member: uid=Teenu,cn=users,dc=raster,dc=com
+member: uid=madhan,cn=users,dc=raster,dc=com
+member: uid=ramya,cn=users,dc=raster,dc=com
+member: uid=Kanagasabesan,cn=users,dc=raster,dc=com
+member: uid=ram,cn=users,dc=raster,dc=com
+member: uid=Gowtham,cn=users,dc=raster,dc=com
+member: uid=krishna,cn=users,dc=raster,dc=com
+ntCode: 8676846465
+postalCode: 636004
+registeredAddress:: MjMsIFNLUyBIb3NwaXRhbCBSb2FkLCBBbGFnYXB1cmFtLCRUYW1pbG5h
+ ZHUsIFNhbGVtIOKAkyA2MzYgMDA0
+rohiniId: 85451212
+sealFilePath: hospital/sks_seal.png
+st: Tamilnadu
+telephoneNumber: 042765322
+
+dn: cn=Claim Submission,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Claim Submission
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115350.163Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303115350.163Z
+displayName: Submission
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Claim Management,cn=Menus,cn=His,cn=applications,dc=raster,dc
+ =com
+url: claim-management/claims
+
+dn: cn=UROLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: UROLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123448.044Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123448.044Z
+code: 109
+description: UROLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=Mala,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Mala
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211029070222.809Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211029070256.829Z
+sn: Bharathi
+creditAmountLimit: 0
+departmentNumber: null
+doctorId: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: Mala
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Patient Explorer,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Patient Explorer
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302094133.556Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210302094133.562Z
+displayName: Patient Explorer
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Patient Registration,cn=Menus,cn=His,cn=applications,dc=raste
+ r,dc=com
+url: front-office/patient-explorer
+
+dn: cn=Vital,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Vital
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065630.097Z
+menuOrder: 23
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065630.102Z
+displayName: Vital
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/vitals
+
+dn: cn=Print Configuration,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Print Configuration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065844.522Z
+menuOrder: 27
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023084446.701Z
+displayName: Print Configuration
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/print-specification
+
+dn: cn=Bank,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Bank
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065354.629Z
+menuOrder: 21
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065354.629Z
+displayName: Bank
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/bank
+
+dn: cn=FAMILY MEDICINE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: FAMILY MEDICINE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123456.071Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123456.071Z
+code: 117
+description: FAMILY MEDICINE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Ward Master,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ward Master
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082355.081Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210304082426.231Z
+displayName: Ward
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/ward
+
+dn: cn=Request History,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Request History
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012060200.850Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012060200.850Z
+displayName: Request History
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Ward,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ward-management/request-history
+
+dn: cn=Doctor,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Doctor
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210316054327.783Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210316054327.784Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=Vishnu,cn=users,dc=raster,dc=com
+member: uid=Suresh,cn=users,dc=raster,dc=com
+member: uid=Sundari,cn=users,dc=raster,dc=com
+member: uid=venkatesh,cn=users,dc=raster,dc=com
+member: uid=Ramki,cn=users,dc=raster,dc=com
+member: uid=muthu,cn=users,dc=raster,dc=com
+member: uid=Kanagasabesan,cn=users,dc=raster,dc=com
+member: uid=ram,cn=users,dc=raster,dc=com
+
+dn: cn=Ct-scan,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: Ct-scan
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211026101812.740Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211026101906.141Z
+code: 2345
+description: ct-scan
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=RHUMOTOLOGIST,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: RHUMOTOLOGIST
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123505.496Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123505.496Z
+code: 129
+description: RHUMOTOLOGIST
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Company,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Company
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306061326.310Z
+menuOrder: 14
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306061326.311Z
+displayName: Company
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/company
+
+dn: uid=sks,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: sks
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023131958.044Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023131958.044Z
+sn: sks
+creditAmountLimit: 50000
+departmentNumber: OPD
+doctorId: null
+isCreditAuthorizedUser: true
+isDoctor: false
+mobile: 9878798899
+uid: sks
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: uid=Manju,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Manju
+createdBy: uid=raja,cn=users,dc=raster,dc=com
+createdDate: 20211029103436.899Z
+modifiedBy: uid=raja,cn=users,dc=raster,dc=com
+modifiedDate: 20211029103436.900Z
+sn: ManjuNath
+departmentNumber: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: Manju
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Radiology,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Radiology
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012055519.598Z
+menuOrder: 12
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094709.089Z
+displayName: Radiology
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Ct,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-work-list
+
+dn: cn=Claim Management,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Claim Management
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012044110.574Z
+menuOrder: 10
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094802.402Z
+displayName: Claim
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+menuIcon: icon-security
+
+dn: cn=Sub Speciality,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Sub Speciality
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306052256.478Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306052256.478Z
+displayName: Sub Speciality
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/sub-speciality
+
+dn: uid=Meena,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Meena
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211029083758.641Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211029083758.642Z
+sn: Devi
+creditAmountLimit: 0
+departmentNumber: null
+doctorId: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: Meena
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: uid=kavitha,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: kavitha
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210315124644.581Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210315124644.584Z
+sn: kavitha
+creditAmountLimit: 100000
+departmentNumber: null
+isCreditAuthorizedUser: true
+isDoctor: false
+mobile: 9789522425
+uid: kavitha
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Op Billing Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=
+ com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Op Billing Cash Counter
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132306.280Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132306.284Z
+displayName: OP Billing
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: cash-counter/op-billing
+
+dn: cn=XEROX,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: XEROX
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123412.535Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123412.535Z
+code: 32
+description: XEROX
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=MRI,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: MRI
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123437.829Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123437.829Z
+code: MRI
+description: MRI
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Location,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Location
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306060330.615Z
+menuOrder: 6
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306060330.617Z
+displayName: Location
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/location
+
+dn: cn=LAB,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: LAB
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123400.030Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123400.030Z
+code: 03
+description: LAB
+externalDepartmentId: 3
+isInvestigationDepartment: true
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=nissi,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: nissi
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012070728.519Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012070728.519Z
+sn: nissi
+creditAmountLimit: 50000
+departmentNumber: CT
+isCreditAuthorizedUser: true
+isDoctor: false
+uid: nissi
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=In Patients,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: In Patients
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210624073226.594Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210624073226.594Z
+displayName: In Patients
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Doctor,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Doctor Emr,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: doctor/in-patient
+
+dn: cn=Claim Inbox,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Claim Inbox
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115326.786Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303115326.787Z
+displayName: Inbox
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Claim Management,cn=Menus,cn=His,cn=applications,dc=raster,dc
+ =com
+url: claim-management/inbox
+
+dn: uid=ram,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: ram
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210327084457.104Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210327084457.105Z
+sn: ram
+creditAmountLimit: 1000000
+departmentNumber: null
+doctorId: 2601
+isCreditAuthorizedUser: true
+isDoctor: true
+mail: kathiravan.a@raster.in
+mobile: 9123585809
+uid: ram
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Sub Department,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Sub Department
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306051730.268Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306051730.273Z
+displayName: Sub Department
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/sub-department
+
+dn: cn=Services & Charges,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Services & Charges
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306061127.331Z
+menuOrder: 12
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306061127.331Z
+displayName: Services & Charges
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/services-and-charges
+
+dn: cn=Create Menu,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: baseEntity
+objectClass: ihmsMenu
+active: true
+cn: Create Menu
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20200819165808.273Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20200819172512.949Z
+displayName: Create Menu
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Developers,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/create-menu
+
+dn: cn=Specialisation,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Specialisation
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306052405.188Z
+menuOrder: 5
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306052405.189Z
+displayName: Specialisation
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/specialisation
+
+dn: cn=Op Credit,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Op Credit
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012060633.035Z
+menuOrder: 8
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012060633.037Z
+displayName: Op Credit
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/op-credit
+
+dn: cn=DEXA SCAN,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: DEXA SCAN
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123502.925Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123502.925Z
+code: 125
+description: DEXA SCAN
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=GYNECOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: GYNECOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123453.106Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123453.106Z
+code: 114
+description: GYNECOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Surgical Procedure,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Surgical Procedure
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023084405.870Z
+menuOrder: 26
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023084405.871Z
+displayName: Surgical Procedure
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/surgical-procedure
+
+dn: cn=CT,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CT
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123415.261Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123415.261Z
+code: 44
+description: CT
+externalDepartmentId: null
+isInvestigationDepartment: true
+member: uid=raster,dc=raster,dc=com
+
+dn: uid=Hema,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Hema
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211029083532.280Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211029083532.281Z
+sn: Hema
+creditAmountLimit: 0
+departmentNumber: null
+doctorId: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: Hema
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=Icu,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Icu
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012060059.321Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012060059.331Z
+displayName: ICU
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Ward,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ward-management/ICU
+
+dn: cn=Department,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Department
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306051653.551Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306051653.552Z
+displayName: Department
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/department
+
+dn: cn=Report,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Report
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012065239.724Z
+menuOrder: 11
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012083452.149Z
+displayName: Reports
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Reports,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/report-configuration
+
+dn: cn=GENETIC,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: GENETIC
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123459.221Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123459.221Z
+code: 121
+description: GENETIC
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=X-RAY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: X-RAY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123358.967Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123358.967Z
+code: 02
+description: X RAY
+externalDepartmentId: null
+isInvestigationDepartment: true
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Receipt,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Receipt
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132435.172Z
+menuOrder: 4
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132435.172Z
+displayName: Receipt
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/receipt
+
+dn: cn=CERTIFICATE FEES,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: CERTIFICATE FEES
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123408.570Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123408.570Z
+code: 20
+description: CERTIFICATE FEES
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=ANESTHESIA,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ANESTHESIA
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123449.993Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123449.993Z
+code: 111
+description: ANESTHESIA
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=NICU,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: NICU
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123428.338Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123428.338Z
+code: NICU
+description: NICU
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Tester
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012071547.115Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012071547.115Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=mukesh,cn=users,dc=raster,dc=com
+member: uid=Hema,cn=users,dc=raster,dc=com
+member: uid=raja,cn=users,dc=raster,dc=com
+member: uid=Manju,cn=users,dc=raster,dc=com
+
+dn: cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsApplicationRoot
+cn: applications
+
+dn: uid=Gowtham,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Gowtham
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210315124750.324Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210315124750.325Z
+sn: Gowtham
+creditAmountLimit: 10000
+departmentNumber: null
+isCreditAuthorizedUser: true
+isDoctor: false
+mail:: Z293dGhhbWFuLnJAcmFzdGVyLmluIA==
+mobile: 7708599111
+uid: Gowtham
+userPassword: {SSHA}6CokmF9mTvd3rMeMeraeLHpKGKwEb8OU8ylD8A==
+
+dn: cn=PSYCHOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PSYCHOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123423.138Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123423.138Z
+code: 118
+description: PSYCHOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsMenuRoot
+cn: Menus
+
+dn: cn=Cash Register,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Cash Register
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132553.423Z
+menuOrder: 7
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132553.423Z
+displayName: Cash Register
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/cash-register
+
+dn: cn=Ot Dashboard,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ot Dashboard
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012060854.301Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012060854.301Z
+displayName: Dashboard
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Operation Theatre,cn=Menus,cn=His,cn=applications,dc=raster,d
+ c=com
+url: operation-theatre/dashboard
+
+dn: uid=Suresh,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Suresh
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210430072746.617Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210430072746.617Z
+sn: Suresh
+creditAmountLimit: 0
+departmentNumber: cn=Ipd,ou=departments,o=skshospital
+doctorId: 4
+isCreditAuthorizedUser: false
+isDoctor: true
+mobile: 9994964489
+uid: Suresh
+userPassword: {SHA}bqGEtX2WwecFrpoATOfOLUAdABs=
+
+dn: uid=madhan,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: madhan
+createdBy: uid=mukesh,cn=users,dc=raster,dc=com
+createdDate: 20211013122206.771Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211013122206.771Z
+sn: madhanKumar
+creditAmountLimit: 100000
+departmentNumber: null
+isCreditAuthorizedUser: true
+isDoctor: false
+uid: madhan
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: cn=HEALTH CHECKUP,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: HEALTH CHECKUP
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123404.065Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123404.065Z
+code: 11
+description: HEALTH CHECKUP
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Work Order,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Work Order
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210624073147.026Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210624073147.027Z
+displayName: Work Order
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Casualty,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Ward,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ward-management/work-order
+
+dn: cn=Casualty Registration,cn=Menus,cn=His,cn=applications,dc=raster,dc=co
+ m
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Casualty Registration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012055743.378Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211012055743.392Z
+displayName: Registration
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Casualty,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Casualty,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: casualty/casualty-patient-explorer
+
+dn: cn=WARD PROCEDURE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: WARD PROCEDURE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123425.339Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123425.339Z
+code: WP
+description: WARD PROCEDURE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Admission,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Admission
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110728.886Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110728.887Z
+displayName: Admission
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Ip,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ip-management/ip-admission
+
+dn: cn=OPTHAMOLOGIST,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: OPTHAMOLOGIST
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123501.157Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123501.157Z
+code: OPT
+description: OPTHAMOLOGIST
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=His,cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsApplication
+objectClass: baseEntity
+active: TRUE
+cn: His
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20200819161804.424Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20200819161806.724Z
+url: hms
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=raster,dc=raster,dc=com
+member: uid=Vishnu,cn=users,dc=raster,dc=com
+member: uid=Suresh,cn=users,dc=raster,dc=com
+member: uid=Sundari,cn=users,dc=raster,dc=com
+member: uid=venkatesh,cn=users,dc=raster,dc=com
+member: uid=Ramki,cn=users,dc=raster,dc=com
+member: uid=kavitha,cn=users,dc=raster,dc=com
+member: uid=muthu,cn=users,dc=raster,dc=com
+member: uid=sks,cn=users,dc=raster,dc=com
+member: uid=mukesh,cn=users,dc=raster,dc=com
+member: uid=ct,cn=users,dc=raster,dc=com
+member: uid=nissi,cn=users,dc=raster,dc=com
+member: uid=Mala,cn=users,dc=raster,dc=com
+member: uid=Hema,cn=users,dc=raster,dc=com
+member: uid=Meena,cn=users,dc=raster,dc=com
+member: uid=raja,cn=users,dc=raster,dc=com
+member: uid=Manju,cn=users,dc=raster,dc=com
+member: uid=Teenu,cn=users,dc=raster,dc=com
+member: uid=madhan,cn=users,dc=raster,dc=com
+member: uid=ramya,cn=users,dc=raster,dc=com
+member: uid=Kanagasabesan,cn=users,dc=raster,dc=com
+member: uid=ram,cn=users,dc=raster,dc=com
+member: uid=Gowtham,cn=users,dc=raster,dc=com
+member: uid=krishna,cn=users,dc=raster,dc=com
+
+dn: cn=Payment,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: false
+cn: Payment
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211022070645.866Z
+menuOrder: 8
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211022070645.868Z
+displayName: Payment
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/payment
+
+dn: cn=Operation Theatre,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Operation Theatre
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012055628.937Z
+menuOrder: 13
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094646.491Z
+displayName: Operation Theatre
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+menuIcon: icon-ot
+
+dn: cn=User Management,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: User Management
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304083024.086Z
+menuOrder: 17
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094506.787Z
+displayName: User Management
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-user-management
+
+dn: cn=FILE CHARGES,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: FILE CHARGES
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123406.178Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123406.179Z
+code: 14
+description: FILE CHARGES
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectClass: top
+objectClass: ihmsRoleRoot
+cn: Roles
+
+dn: cn=Ip Billing Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=
+ com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ip Billing Cash Counter
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303132346.443Z
+menuOrder: 2
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303132346.443Z
+displayName: IP Billing
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Accounts,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Cashier,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: cash-counter/ip-counter-billing
+
+dn: cn=VASCULAR,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: VASCULAR
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123457.022Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123457.022Z
+code: 119
+description: VASCULAR
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Event,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Event
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306065235.020Z
+menuOrder: 20
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306065235.021Z
+displayName: Event
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Preferences,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/events
+
+dn: cn=RADIOLOGY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: RADIOLOGY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123447.111Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123447.111Z
+code: 108
+description: RADIOLOGY
+externalDepartmentId: null
+isInvestigationDepartment: true
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=PLASTIC SURGEON,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PLASTIC SURGEON
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123443.630Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123443.630Z
+code: PS
+description: PLASTIC SURGEON
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Birth Registration,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Birth Registration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211012070301.781Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211025121129.036Z
+displayName: Birth Records
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+parentMenu: cn=Mrd,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: medical-records-department/birth-records
+
+dn: cn=Dashboard,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Dashboard
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211020095043.443Z
+menuOrder: 1
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020095043.452Z
+displayName: Dashboard
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+menuIcon: icon-dashboard
+url: dashboard
+
+dn: cn=BEDSIDE SCAN,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: BEDSIDE SCAN
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123410.471Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123410.471Z
+code: 24
+description: BEDSIDE SCAN
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Ip Masters,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Ip Masters
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210304082150.883Z
+menuOrder: 19
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094420.834Z
+displayName: Ip Masters
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+menuIcon: icon-settings
+
+dn: cn=Doctor Leave,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Doctor Leave
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210306070034.373Z
+menuOrder: 7
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210306070034.373Z
+displayName: Doctor Leave
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Op,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: preferences/doctor-leave
+
+dn: cn=SPINE,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: SPINE
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123446.300Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123446.300Z
+code: 107
+description: SPINE
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=ORTHOPEDIC,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: ORTHOPEDIC
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123440.816Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123440.816Z
+code: ORTH
+description: ORTHOPEDIC
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=OPG/CEPH. X-RAY,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: OPG/CEPH. X-RAY
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123419.421Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123419.421Z
+code: 87
+description: OPG/CEPH. X-RAY
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=PEDIATRIC,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PEDIATRIC
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123442.740Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123442.740Z
+code: PWD
+description: PEDIATRIC
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=BLOOD BANK,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: BLOOD BANK
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123438.819Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123438.819Z
+code: BB
+description: BLOOD BANK
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Patient Registration,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Patient Registration
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210302091638.924Z
+menuOrder: 5
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094929.596Z
+displayName: Patient Registration
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-front-office
+
+dn: uid=raja,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: raja
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211029070504.859Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211029070504.859Z
+sn: Test
+departmentNumber: null
+isCreditAuthorizedUser: false
+isDoctor: false
+uid: raja
+userPassword: {SHA}cRDtpNCeBiql5KOQsKVyrA0sAiA=
+
+dn: ou=departments,o=skshospital,dc=raster,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: departments
+
+dn: uid=Kanagasabesan,cn=users,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsUser
+objectclass: inetOrgPerson
+objectclass: baseEntity
+objectclass: person
+objectclass: organizationalPerson
+active: true
+cn: Kanagasabesan
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210430073135.542Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210430073135.546Z
+sn: Kanagasabesan
+departmentNumber: cn=Ipd,ou=departments,o=skshospital
+doctorId: 5905
+isCreditAuthorizedUser: false
+isDoctor: true
+uid: Kanagasabesan
+userPassword: {SHA}v6nlIRTdJxTs/O7YxJcg9QKUDJg=
+
+dn: cn=Casualty,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsRole
+objectclass: baseEntity
+active: true
+cn: Casualty
+createdBy: uid=mukesh,cn=users,dc=raster,dc=com
+createdDate: 20211025121547.354Z
+modifiedBy: uid=mukesh,cn=users,dc=raster,dc=com
+modifiedDate: 20211025121547.354Z
+member: uid=raster,dc=raster,dc=com
+member: cn=Salem,ou=branches,o=skshospital,dc=raster,dc=com
+member: uid=Mala,cn=users,dc=raster,dc=com
+member: uid=madhan,cn=users,dc=raster,dc=com
+
+dn: cn=M.O.T,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: M.O.T
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123401.116Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123401.116Z
+code: 04
+description: M.O.T
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=PACE MAKER,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PACE MAKER
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123411.448Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123411.448Z
+code: 30
+description: PACE MAKER
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Waiting List,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Waiting List
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303110811.532Z
+menuOrder: 3
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20210303110811.532Z
+displayName: Waiting List
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+parentMenu: cn=Ip,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: ip-management/waiting-list
+
+dn: cn=PRD ULTRASOUND,ou=departments,o=skshospital,dc=raster,dc=com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: PRD ULTRASOUND
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123436.962Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123436.962Z
+code: US
+description: PRD ULTRASOUND
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Payment History,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Payment History
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211023084141.811Z
+menuOrder: 8
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211023084141.811Z
+displayName: Payment History
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Front Office Executive,cn=Roles,cn=His,cn=applications,dc=raster,
+ dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+parentMenu: cn=Cash Counter,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+url: accounts/payment-history
+
+dn: cn=POST ANAESTHESIA CARE UNIT,ou=departments,o=skshospital,dc=raster,dc=
+ com
+objectclass: top
+objectclass: ihmsDepartment
+objectclass: baseEntity
+active: true
+cn: POST ANAESTHESIA CARE UNIT
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20211011123435.950Z
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211011123435.950Z
+code: PACU
+description: POST ANAESTHESIA CARE UNIT
+externalDepartmentId: null
+isInvestigationDepartment: false
+member: uid=raster,dc=raster,dc=com
+
+dn: cn=Doctor Emr,cn=Menus,cn=His,cn=applications,dc=raster,dc=com
+objectclass: top
+objectclass: baseEntity
+objectclass: ihmsMenu
+active: true
+cn: Doctor Emr
+createdBy: uid=raster,dc=raster,dc=com
+createdDate: 20210303115446.568Z
+menuOrder: 11
+modifiedBy: uid=raster,dc=raster,dc=com
+modifiedDate: 20211020094740.166Z
+displayName: Doctor
+member: cn=Developer Admin,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Business Development Manager,cn=Roles,cn=His,cn=applications,dc=r
+ aster,dc=com
+member: cn=Doctor,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+member: cn=Tester,cn=Roles,cn=His,cn=applications,dc=raster,dc=com
+menuIcon: icon-doctor

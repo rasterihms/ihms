@@ -1,0 +1,118 @@
+entity Application{
+	name String required,
+    url String,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity Users{
+	userName String required,
+	password String required,
+	effectiveFrom Instant,
+    ldapId String,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity Role{
+	name String,
+    ldapId String,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity UsersRole{
+	ldapUserId String,
+    ldapRoleId String,
+    linkTo LinkTo,
+    linkToId Long,
+    effectiveFrom Instant,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity Resource{
+    name String,
+    url String,
+    permissionType PermissionType,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity Menu{
+    name String,
+    url String,
+    parentMenuId Long,
+    order Integer,
+    icon String,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity RoleResource{
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity RoleMenu{
+    permissionType PermissionType,
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+entity MenuResource{
+	active Boolean required,
+    createdDate Instant,
+    createdBy Long,
+    lastModified Instant,
+    modifiedBy Long
+}
+
+enum PermissionType {
+    READ_ONLY, ADD_EDIT, FULL
+}
+
+enum LinkTo {
+    DEPARTMENT, SPECIALITY, CONSULTANT
+}
+
+relationship ManyToOne {
+    Role{application} to Application,
+    Resource{application} to Application,
+    Menu{application} to Application,
+    RoleResource{role} to Role,
+    RoleResource{resource} to Resource,
+    RoleMenu{role} to Role,
+    RoleMenu{menu} to Menu,
+    MenuResource{menu} to Menu,
+    MenuResource{resource} to Resource,
+    UsersRole{users} to Users,
+    UsersRole{role} to Role
+}
+
+// Set service options to all except few
+service all with serviceImpl

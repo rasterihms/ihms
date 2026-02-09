@@ -1,0 +1,12 @@
+
+
+${AnsiColor.GREEN} █████╗ ██╗   ██╗████████╗██╗  ██╗${AnsiColor.RED}███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗
+${AnsiColor.GREEN}██╔══██╗██║   ██║╚══██╔══╝██║  ██║${AnsiColor.RED}██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
+${AnsiColor.GREEN}███████║██║   ██║   ██║   ███████║${AnsiColor.RED}███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝
+${AnsiColor.GREEN}██╔══██╗██║   ██║   ██║   ██╔══██║${AnsiColor.RED}╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗
+${AnsiColor.GREEN}██║  ██║╚██████╔╝   ██║   ██║  ██║${AnsiColor.RED}███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║
+${AnsiColor.GREEN}╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝${AnsiColor.RED}╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
+
+
+${AnsiColor.BRIGHT_BLUE}:: RASTER AUTHSERVER🤓  :: Running Spring Boot ${spring-boot.version} ::
+:: https://www.raster.in ::${AnsiColor.DEFAULT}

@@ -1,0 +1,4 @@
+dependencies {
+    compile "org.mapstruct:mapstruct-jdk8:1.2.0.CR1", "org.projectlombok:lombok:1.16.14"
+    provided "org.mapstruct:mapstruct-processor:1.2.0.CR1", "org.projectlombok:lombok:1.16.14"
+}
