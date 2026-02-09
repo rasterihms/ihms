@@ -7,7 +7,7 @@ This is a quick reference companion to the comprehensive [JHIPSTER_REMOVAL_MILES
 - **JHipster Version:** 4.14.3 (legacy)
 - **Microservices:** 2 (authserver, abdm)
 - **Spring Boot Version:** 1.5.x → 2.7.x/3.x
-- **Estimated Timeline:** 16 weeks
+- **Estimated Timeline:** 17 weeks (Milestones 1-8), plus ongoing optimization
 - **Total Configuration Files:** 50+ tenant configs
 - **Key Dependencies to Replace:** ~10 major components
 
