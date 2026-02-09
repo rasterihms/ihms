@@ -14,13 +14,20 @@ For detailed information about the JHipster removal project, please refer to:
    - Risk assessment and mitigation strategies
    - Success criteria and rollback procedures
 
-2. **[JHIPSTER_REMOVAL_QUICK_REFERENCE.md](./JHIPSTER_REMOVAL_QUICK_REFERENCE.md)** - Developer quick reference
+2. **[JHIPSTER_REMOVAL_DETAILED_PLAN.md](./JHIPSTER_REMOVAL_DETAILED_PLAN.md)** - 📌 **Tactical execution guide** (START HERE)
+   - Step-by-step implementation instructions
+   - Code examples and file-specific changes
+   - Command references and validation steps
+   - Architecture diagrams (current vs. target)
+   - Troubleshooting and migration patterns
+
+3. **[JHIPSTER_REMOVAL_QUICK_REFERENCE.md](./JHIPSTER_REMOVAL_QUICK_REFERENCE.md)** - Developer quick reference
    - Quick stats and critical components to replace
    - Common migration patterns and examples
    - File checklists by priority
    - Testing strategies and useful commands
 
-3. **[JHIPSTER_REMOVAL_GITHUB_MILESTONES.md](./JHIPSTER_REMOVAL_GITHUB_MILESTONES.md)** - GitHub project tracking
+4. **[JHIPSTER_REMOVAL_GITHUB_MILESTONES.md](./JHIPSTER_REMOVAL_GITHUB_MILESTONES.md)** - GitHub project tracking
    - 24 issues across 9 milestones
    - Issue templates for GitHub Projects
    - Labels and priority assignments
