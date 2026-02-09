@@ -1,0 +1,358 @@
+buildscript {
+
+    ext {
+        springBootVersion = '1.5.6.RELEASE'
+    }
+
+    repositories {
+
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url "https://mvnrepository.com/artifact/io.github.openfeign.form/feign-form"
+        }
+    }
+
+    dependencies {
+
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "se.transmode.gradle:gradle-docker:1.2"
+        classpath 'com.palominolabs.gradle.task:gradle-git-clone-task:0.0.2'
+        classpath "gradle.plugin.com.ewerk.gradle.plugins:querydsl-plugin:1.0.9"
+        classpath "com.moowork.gradle:gradle-node-plugin:1.2.0"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
+    }
+
+}
+
+subprojects {
+
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java'
+    apply plugin: 'docker'
+    apply from: "${rootProject.projectDir}/gradle/querydsl.gradle"
+    apply plugin: 'com.moowork.node'
+    apply plugin: "org.sonarqube"
+    apply plugin: 'jacoco'
+
+
+    ext {
+        springCloudVersion = 'Dalston.SR1'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    sourceCompatibility = 1.8
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+    dependencies {
+        compile('org.projectlombok:lombok:1.16.18')
+        compile('org.springframework.boot:spring-boot-starter-actuator')
+        compile('org.springframework.cloud:spring-cloud-starter-eureka')
+        compile('org.springframework.cloud:spring-cloud-starter-feign')
+        compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+        compile('org.springframework.cloud:spring-cloud-starter-ribbon')
+        compile('org.springframework.boot:spring-boot-starter-data-jpa')
+        compile('org.springframework.boot:spring-boot-starter-web')
+        compile 'org.springframework.boot:spring-boot-starter-freemarker'
+        compile 'org.springframework.boot:spring-boot-starter-mail'
+        compile 'org.springframework.boot:spring-boot-starter-cache'
+        compile "org.springframework:spring-context-support"
+        compile("org.springframework.boot:spring-boot-starter-amqp")
+        compile('org.springframework.boot:spring-boot-starter-data-ldap')
+
+        compile 'io.springfox:springfox-swagger2:2.4.0'
+        compile 'io.springfox:springfox-swagger-ui:2.4.0'
+        compile "com.google.code.gson:gson:2.8.4"
+        compile 'io.jsonwebtoken:jjwt:0.7.0'
+        compile "org.apache.poi:poi:4.1.0"
+        compile "org.apache.poi:poi-ooxml:4.1.0"
+        compile "org.apache.poi:poi-ooxml-schemas:4.1.0"
+        compile "org.apache.poi:ooxml-schemas:1.4"
+        compile "com.itextpdf:itextpdf:5.5.13.1"
+        compile "com.itextpdf.tool:xmlworker:5.5.13.1"
+        compile ('com.lowagie:itext:2.1.7'){
+            exclude module: 'bcprov-jdk15on'
+        }
+        compile "org.apache.xmlbeans:xmlbeans:3.1.0"
+        compile('net.sf.jasperreports:jasperreports:6.4.0') {
+            exclude group: 'org.olap4j'
+        }
+        compile group: 'net.sourceforge.barbecue', name: 'barbecue', version: '1.5-beta1'
+        compile group: 'io.github.openfeign.form', name: 'feign-form-spring', version: '3.3.0'
+        compile group: 'ca.uhn.hapi', name: 'hapi-base', version: '2.1'
+        compile group: 'ca.uhn.hapi', name: 'hapi-structures-v24', version: '2.1'
+        compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+        runtime('com.h2database:h2')
+        runtime('org.postgresql:postgresql')
+        testCompile('org.springframework.boot:spring-boot-starter-test')
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+
+    def allTestCoverageFile = "${rootProject.projectDir}/jacoco/allTestCoverage.exec"
+
+    test {
+        jacoco {
+            append = false
+            destinationFile = file("$buildDir/jacoco/test.exec")
+            classDumpFile = file("$buildDir/jacoco/classpathdumps")
+        }
+    }
+
+    task jacocoReport(type: JacocoMerge, dependsOn: "test") {
+        destinationFile = file(allTestCoverageFile)
+        executionData = project.fileTree(dir: '.', include: '**/build/jacoco/test.exec')
+    }
+
+
+    if (it.name != 'client-ui' || it.name != 'onestore-ui' || it.name != 'onebook-ui' || it.name != 'onepharmacy-ui') {
+
+        sonarqube {
+            properties {
+                property "sonar.projectKey", project.name
+                property "sonar.java.binaries", "${project.buildDir}/"
+                property "sonar.sources", "${rootProject.projectDir}/${project.name}/src/main/java"
+                property "sonar.sourceEncoding", "UTF-8"
+                property "sonar.jacoco.reportPaths", "${allTestCoverageFile}"
+            }
+        }
+    }
+}
+
+project.ext {
+    microServices = subprojects.findAll {
+                it.name == 'eureka' ||
+//                it.name == 'billing' ||
+                it.name == 'gateway' ||
+                it.name == 'master' ||
+//                it.name == 'hms' ||
+//                it.name == 'hrm' ||
+//                it.name == 'usermanagement' ||
+//                it.name == 'notification' ||
+                it.name == 'authserver' ||
+//                it.name == 'ipvisit' ||
+//                it.name == 'emr' ||
+                it.name == 'one-book' ||
+                it.name == 'messaging' ||
+                it.name == 'pharmacy' ||
+                it.name == 'his' ||
+                it.name == 'storage-service' ||
+                it.name == 'abdm' ||
+//      ||
+//                it.name == 'bloodbank'
+                it.name == 'stores'
+    }
+}
+
+project(':exceptions') {
+}
+
+project(':client-ui') {
+}
+
+project(':onestore-ui') {
+}
+
+project(':onebook-ui') {
+}
+
+project(':onepharmacy-ui') {
+}
+
+project(':ihms-commons') {
+
+    apply plugin: 'com.moowork.node'
+
+    dependencies {
+        compile 'org.springframework.boot:spring-boot-starter-security'
+        compile project(":exceptions")
+    }
+}
+
+project(':authserver') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+        compile project(":exceptions")
+        compile group: 'org.springframework.security', name: 'spring-security-ldap', version: '3.2.5.RELEASE'
+
+    }
+}
+
+project(':eureka') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
+    }
+}
+
+project(':gateway') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile('org.springframework.cloud:spring-cloud-starter-zuul')
+    }
+}
+
+//project(':ipvisit') {
+//    apply plugin: 'org.springframework.boot'
+//    dependencies {
+//        compile project(":ihms-commons")
+//    }
+//}
+
+project(':master') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+//project(':billing') {
+//    apply plugin: 'org.springframework.boot'
+//    dependencies {
+//        compile project(":ihms-commons")
+//        compile 'org.yaml:snakeyaml:1.14'
+//    }
+//}
+
+project(':hrm') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+        compile project(":exceptions")
+    }
+}
+
+// Todo - old hms project and will be removed in future.
+//project(':hms') {
+//    apply plugin: 'org.springframework.boot'
+//    dependencies {
+//        compile project(":ihms-commons")
+//    }
+//}
+
+project(':his') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':notification') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':emr') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':one-book') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':messaging') {
+    apply plugin: 'org.springframework.boot'
+}
+
+project(':pharmacy') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':storage-service') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':abdm') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':bloodbank') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+project(':stores') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compile project(":ihms-commons")
+    }
+}
+
+configure(project.microServices) {
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'docker'
+    dependencies {
+        compile project(":exceptions")
+        compile 'org.flywaydb:flyway-core:4.2.0'
+    }
+
+    task buildDocker(type: Docker) {
+
+        baseImage = 'flopes/spring-boot-docker:1.1'
+        push = project.hasProperty('push')
+    }
+
+    buildDocker.doFirst {
+        copy {
+            from jar
+            into "${stageDir}/assets"
+            rename { "spring-boot.jar" }
+        }
+    }
+
+    buildDocker.dependsOn(build)
+}
+
+// DONOT DELETE
+
+// NOTE : It will generate reports after the test case issues fixed
+
+//task jacocoReport(type: JacocoReport , dependsOn: "collectJacocoMerge") {
+
+//        additionalSourceDirs = files(sourceSets.main.allSource.srcDirs)
+//        sourceDirectories = files(sourceSets.main.allSource.srcDirs)
+//        classDirectories =  files(sourceSets.main.output)
+//        project.each {
+//            def coverageFileLocation = "${rootProject.projectDir}/${project.name}/build/jacoco/test.exec"
+//            if (new File(coverageFileLocation).exists()) {
+//                jacocoTestFiles << coverageFileLocation
+//            }
+//        }
+//        executionData files(jacocoTestFiles)
+//        reports {
+//            xml.enabled false
+//            csv.enabled false
+//            html.enabled true
+//            html.destination "${rootProject.projectDir}/jacoco/html/"
+//        }
+//}

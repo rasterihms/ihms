@@ -1,0 +1,27 @@
+node('dev_45') {
+
+    stage("checkout sourcecode") {
+        checkout scm
+    }
+
+    stage("Running jacoco ...") {
+            try {
+                sh "./gradlew clean  jacocoReport"
+            } catch(err) {
+                try {
+                  sh "./gradlew -x test sonarqube"
+                 } catch(errLocal) {
+                 throw errLocal
+                 }
+                 throw err
+            }
+     }
+    stage("Sonar Analysis ...") {
+            try {
+               sh "./gradlew sonarqube"
+            } catch(err) {
+                throw err
+            }
+        }
+}
+

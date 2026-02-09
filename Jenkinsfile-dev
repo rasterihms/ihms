@@ -1,0 +1,83 @@
+node('dev_245') {
+       
+    def baseProjectName="ihms",
+    imagesNames=['pharmacy', 'stores', 'master', 'his', 'gateway', 'eureka', 'authserver', 'storage-service', 'one-book', 'abdm'],
+    imagesNamesclient=['client'],
+    remoteRepositary="172.17.1.245:8083",
+    repo_username="admin",
+    repo_password="raster@1234";
+
+    stage("checkout sourcecode") {
+        checkout scm
+    }
+
+    stage("stop") {
+        sh "docker-compose down"
+    }
+
+    stage("build microservices") {
+        try {
+            sh "./gradlew -x test clean buildDocker -P version="+build_version
+        } catch(err) {
+            throw err
+        }
+    }
+
+    stage('Push image micro-services') {
+       imagesNames.each { image ->
+           sh "docker tag ${baseProjectName}/${image}:"+build_version+" ${remoteRepositary}/${baseProjectName}/${image}:${build_version}"
+       }
+       sh "docker login -u ${repo_username} -p ${repo_password} ${remoteRepositary}"
+         imagesNames.each { image ->
+           sh "docker push ${remoteRepositary}/${baseProjectName}/${image}:${build_version}"
+       }
+    }
+
+    stage("build angular") {
+      try {
+        sh "./gradlew  buildClientCode -P version="+build_version
+      } catch(err) {
+          throw err
+      }
+    }
+
+    stage('Push image') {
+       imagesNamesclient.each { image ->
+           sh "docker tag ${baseProjectName}/${image}:"+build_version+" ${remoteRepositary}/${baseProjectName}/${image}:${build_version}"
+       }
+       sh "docker login -u ${repo_username} -p ${repo_password} ${remoteRepositary}"
+       imagesNamesclient.each { image ->
+         sh "docker push ${remoteRepositary}/${baseProjectName}/${image}:${build_version}"
+       }
+    }
+
+//   stage("start") {
+//         sh REPOSITARY=${remoteRepositary} +" TAG_VERSION="+build_version+" docker-compose up -d"
+//     }
+
+
+//     stage(" running jacoco test") {
+//             try {
+//                 sh "./gradlew clean  :master:test :hms:test collectJacocoReport"
+//             } catch(err) {
+//                 throw err
+//             }
+//      }
+
+//      stage(" generate jacoco report") {
+//                 try {
+//                    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'jacoco', reportFiles: 'index.html', reportName: 'iHms Report', reportTitles: 'iHms Report'])
+//                 } catch(err) {
+//                     throw err
+//                 }
+//       }
+
+//      stage("Sonar Analysis ...") {
+//             try {
+//                sh "./gradlew -x test clean build sonarqube"
+//             } catch(err) {
+//                 step([$class: 'JUnitResultArchiver', testResults: '**/build/test-results/test/TEST-*.xml'])
+//                 throw err
+//             }
+//         }
+}

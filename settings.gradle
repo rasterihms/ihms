@@ -1,0 +1,3 @@
+include 'eureka', 'gateway', 'client-ui', 'onepharmacy-ui', 'onestore-ui', 'onebook-ui', 'authserver', 'ihms-commons', 'exceptions', 'master', 'notification', 'hrm', 'emr', 'pharmacy', 'his', 'storage-service', 'bloodbank', 'stores', 'one-book', 'messaging', 'abdm'
+rootProject.name = 'ihms'
+

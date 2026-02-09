@@ -1,0 +1,69 @@
+node('dev-249') {
+
+    stage("checkout sourcecode") {
+        checkout scm
+    }
+
+    stage("stop") {
+            sh "docker-compose down"
+    }
+
+    stage("build microservices") {
+        try {
+            sh "./gradlew -x test clean buildDocker "
+        } catch(err) {
+            throw err
+        }
+    }
+
+     stage("build angular") {
+            try {
+                 sh "./gradlew  buildClientCode"
+                } catch(err) {
+                throw err
+            }
+     }
+
+    stage("start") {
+        sh "docker-compose up -d db"
+    }
+
+    stage("update db") {
+            try {
+                sh "./gradlew -x test clean build :pharmacy:liquibaseClearChecksums "
+            } catch(err) {
+                throw err
+            }
+    }
+
+    stage("start") {
+        sh "docker-compose up -d"
+    }
+
+
+    stage(" running jacoco test") {
+            try {
+                sh "./gradlew clean  collectJacocoReport"
+            } catch(err) {
+                throw err
+            }
+     }
+
+     stage(" generate jacoco report") {
+                try {
+                   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'jacoco', reportFiles: 'index.html', reportName: 'iHms Report', reportTitles: 'iHms Report'])
+                } catch(err) {
+                    throw err
+                }
+      }
+
+     stage("Sonar Analysis ...") {
+            try {
+               sh "./gradlew -x test clean build sonarqube"
+            } catch(err) {
+                step([$class: 'JUnitResultArchiver', testResults: '**/build/test-results/test/TEST-*.xml'])
+                throw err
+            }
+        }
+}
+

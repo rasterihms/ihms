@@ -1,0 +1,50 @@
+node('master') {
+
+    def commitId = "$COMMIT_ID"
+
+    stage("Checkout sourcecode") {
+        checkout([$class: 'GitSCM',
+            branches: [[name: commitId]],
+            doGenerateSubmoduleConfigurations: false,
+            extensions: [],
+            submoduleCfg: [],
+            userRemoteConfigs: scm.userRemoteConfigs
+        ])
+    }
+
+     
+    stage("Building...") {
+        try {
+           sh './gradlew -x test clean buildDocker'
+        } catch(err) {
+            step([$class: 'JUnitResultArchiver', testResults: '**/build/test-results/test/TEST-*.xml'])
+            throw err
+        }
+    }
+    
+     stage("Build Angular...") {
+        try {
+           sh './gradlew -x test clean :client:buildClientCode'
+        } catch(err) {
+           throw err
+        }
+    }
+
+    stage("Sonar Analysis ...") {
+        try {
+           sh './gradlew -x test sonarqube'
+        } catch(err) {
+            step([$class: 'JUnitResultArchiver', testResults: '**/build/test-results/test/TEST-*.xml'])
+            throw err
+        }
+    }
+
+    stage("stop") {
+        sh "docker-compose down"
+    }
+
+    stage("start") {
+        sh "docker-compose up -d"
+    }
+
+}

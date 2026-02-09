@@ -1,0 +1,67 @@
+node('dev_204') {
+       
+    def baseProjectName = "ihms",
+
+        frontendImages= (frontend_builds!=null && frontend_builds.length()>0) ? frontend_builds.split(',').collect{it as String} : null,
+        backendImages=(backend_builds!=null && backend_builds.length()>0) ? backend_builds.split(',').collect{it as String} : null,
+        remoteRepository="172.17.1.204:8083",
+        repoUserName="admin",
+        repoPassword="raster@1234";
+
+    stage("checkout sourcecode") {
+        checkout scm
+    }
+
+    stage("stop existing") {
+        sh "docker-compose down"
+    }
+
+    if(frontendImages != null && frontendImages.size() > 0){
+
+        stage("build frontend") {
+            frontendImages.each { image ->
+                try {
+                    println("front end images: "+image)
+                    sh "./gradlew build${image}ClientCode -P version="+build_version
+                } catch(err) {
+                    throw err
+                }
+            }
+        }
+
+        stage('push frontend') {
+            frontendImages.each { image ->
+                sh "docker tag ${baseProjectName}/${image}:"+build_version+" ${remoteRepository}/${baseProjectName}/${image}:${build_version}"
+            }
+            sh "docker login -u ${repoUserName} -p ${repoPassword} ${remoteRepository}"
+            frontendImages.each { image ->
+                sh "docker push ${remoteRepository}/${baseProjectName}/${image}:${build_version}"
+            }
+        }
+
+    }
+
+    if(backend_builds != null && backend_builds.size() > 0){
+
+        stage("build backend") {
+            backendImages.each { image ->
+                try {
+                    sh "./gradlew -x test :${image}:clean :${image}:buildDocker -P version="+build_version
+                } catch(err) {
+                    throw err
+                }
+            }
+        }
+
+        stage('push backend') {
+           backendImages.each { image ->
+               sh "docker tag ${baseProjectName}/${image}:"+build_version+" ${remoteRepository}/${baseProjectName}/${image}:${build_version}"
+           }
+           sh "docker login -u ${repoUserName} -p ${repoPassword} ${remoteRepository}"
+           backendImages.each { image ->
+               sh "docker push ${remoteRepository}/${baseProjectName}/${image}:${build_version}"
+           }
+        }
+
+    }
+}

@@ -1,0 +1,248 @@
+version: '2'
+services:
+ eureka:
+   image: ${REPOSITARY}/ihms/eureka:${TAG_VERSION}
+   restart: always
+   ports:
+     - "8761:8080"
+ gateway:
+   image: ${REPOSITARY}/ihms/gateway:${TAG_VERSION}
+   restart: always
+   ports:
+     - "8080:8080"
+   environment:
+     - "SPRING_PROFILES_ACTIVE=docker,prod"
+   links:
+     - eureka
+ authserver:
+   image: ${REPOSITARY}/ihms/authserver:${TAG_VERSION}
+   restart: always
+   ports:
+     - "8090:8080"
+   environment:
+     - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb,dockerldap"
+   links:
+     - eureka
+
+ master:
+   image: ${REPOSITARY}/ihms/master:${TAG_VERSION}
+   restart: always
+   ports:
+     - "8081:8080"
+   environment:
+     - "SPRING_PROFILES_ACTIVE=docker,dockerdb"
+   links:
+     - eureka
+
+# ipvisit:
+#   image: ihms/ipvisit:${TAG_VERSION}
+#   ports:
+#     - "8088:8080"
+#   environment:
+#     - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+#   links:
+#     - eureka
+
+# emr:
+#    image: ihms/emr:${TAG_VERSION}
+#    ports:
+#      - "8092:8080"
+#    environment:
+#      - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+#    links:
+#      - eureka
+
+ client:
+   image: ${REPOSITARY}/ihms/client:${TAG_VERSION}
+   restart: always
+   ports:
+     - "80:80"
+   depends_on:
+     - gateway
+   links:
+     - eureka
+
+# hms:
+#   image: ihms/hms:${TAG_VERSION}
+#   ports:
+#     - "8082:8080"
+#   environment:
+#     - "SPRING_PROFILES_ACTIVE=docker,dockerdb"
+#   links:
+#     - eureka
+
+# hrm:
+#   image: ihms/hrm:${TAG_VERSION}
+#   ports:
+#     - "8084:8080"
+#   environment:
+#      - "SPRING_PROFILES_ACTIVE=docker,dockerdb"
+#   links:
+#    - eureka
+
+# billing:
+#   image: ${REPOSITARY}/ihms/billing:${TAG_VERSION}
+#   ports:
+#     - "8087:8080"
+#   environment:
+#     - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+#   links:
+#     - eureka
+
+ pharmacy:
+    image: ${REPOSITARY}/ihms/pharmacy:${TAG_VERSION}
+    restart: always
+    ports:
+      - "8091:8080"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+    volumes:
+      - ./pharmacy_printing_files:/data
+    links:
+      - eureka
+
+ onepay:
+    image: ${REPOSITARY}/ihms/onebook:${TAG_VERSION}
+    restart: always
+    ports:
+      - "8087:8080"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+    links:
+      - eureka
+
+ stores:
+     image: ${REPOSITARY}/ihms/stores:${TAG_VERSION}
+     restart: always
+     ports:
+       - "8092:8080"
+     environment:
+       - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+#     volumes:
+#       - ./pharmacy_printing_files:/data
+     links:
+       - eureka
+
+ his:
+     image: ${REPOSITARY}/ihms/his:${TAG_VERSION}
+     restart: always
+     ports:
+       - "8095:8080"
+     environment:
+       - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+     links:
+       - eureka
+
+ storage-service:
+     image: ${REPOSITARY}/ihms/storage-service:${TAG_VERSION}
+     restart: always
+     ports:
+       - "8086:8080"
+     environment:
+       - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+     links:
+       - eureka
+
+ abdm:
+     image: ${REPOSITARY}/ihms/abdm:${TAG_VERSION}
+     restart: always
+     ports:
+       - "8088:8080"
+     environment:
+       - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+     links:
+       - eureka
+
+ bloodbank:
+     image: ${REPOSITARY}/ihms/bloodbank:${TAG_VERSION}
+     restart: always
+     ports:
+       - "8071:8080"
+     environment:
+       - "SPRING_PROFILES_ACTIVE=dev,docker,dockerdb"
+     links:
+       - eureka
+
+ db:
+   image: ${REPOSITARY}/postgres:9.6
+   restart: always
+   volumes_from:
+     - data
+   ports:
+     - "5432:5432"
+   environment:
+   - POSTGRES_MULTIPLE_DATABASES=authserver,his,hms,master,notification,ipvisit,hrm,emr,pharmacy,bloodbank
+   - POSTGRES_USER=postgres
+   - POSTGRES_PASSWORD=admin
+   - PGDATA=/var/lib/postgresql/data/pgdata
+
+ #ldap:
+  #  image: ${REPOSITARY}/openmicroscopy/apacheds:0.6.0
+   # restart: always
+  #  ports:
+  #    - "389:10389"
+  #    - "10636:10636"
+  #    - "60088:60088"
+  #    - "60464:60464"
+  #    - "9999:8080"
+  #   - "8443:8443"
+  # volumes:
+  #   - ./ldap:/var/lib/apacheds
+
+ data:
+     image: ${REPOSITARY}/postgres:9.6
+     restart: always
+     volumes:
+       - ./dev-db:/docker-entrypoint-initdb.d
+       - ./pgdb:/var/lib/postgresql/data/pgdata
+
+ # Storage Service
+ minio1:
+     image: ${REPOSITARY}/minio/minio:RELEASE.2019-02-14T00-21-45Z
+     restart: always
+     volumes:
+        - ./storage/data1:/data
+     ports:
+        - "9001:9000"
+     environment:
+        MINIO_ACCESS_KEY: minio
+        MINIO_SECRET_KEY: minio123
+     command: server /data
+
+# es:
+#   labels:
+#     com.example.service: "es"
+#     com.example.description: "For searching and indexing data"
+#   image: elasticsearch:5.4
+#   ports:
+#     - "9200:9200"
+#
+# kibana:
+#   labels:
+#     com.example.service: "kibana"
+#     com.example.description: "Data visualisation and for log aggregation"
+#   image: kibana:5.4.3
+#   ports:
+#     - "5601:5601"
+#   environment:
+#     - ELASTICSEARCH_URL=http://es:9200
+#   depends_on:
+#     - es
+#
+# logstash:
+#    image: logstash
+#    ports:
+#     - "9600:9600"
+#    links:
+#     - es
+#    volumes:
+#     - ./logstash/:/config-dir
+#    command: logstash -f config-dir/pipeline/logstash.conf
+#    depends_on:
+#     - es
+#
+# sonarqube:
+#      container_name: sonarqube
+#      image: sonarqube
+#      ports:
+#       - "9000:9000"
